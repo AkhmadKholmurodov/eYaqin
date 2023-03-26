@@ -161,7 +161,7 @@ const AllJobs = ({ logined, setLogined }) => {
                 whiteSpace: "nowrap",
               }}
             >
-              모든 당근알바
+              All Jobs of eYaqin
             </h1>
 
             <span
@@ -181,7 +181,7 @@ const AllJobs = ({ logined, setLogined }) => {
                 }}
               >
                 {" "}
-                알바 구하기
+                Searching for jobs
               </a>
             </span>
           </div>
@@ -328,7 +328,7 @@ const AllJobs = ({ logined, setLogined }) => {
                     paddingLeft: "2rem",
                   }}
                 >
-                  이웃의 일손을 빠르게
+                  Help to your neighboards
                 </h1>
                 <h1
                   style={{
@@ -338,7 +338,7 @@ const AllJobs = ({ logined, setLogined }) => {
                     paddingLeft: "2rem",
                   }}
                 >
-                  당근알바에서 바로 찾아보세요!
+                  with eYaqin
                 </h1>
               </div>
               <div
@@ -396,7 +396,7 @@ const AllJobs = ({ logined, setLogined }) => {
                   marginLeft: "-20px",
                 }}
               >
-                우리 동네에서 찾는 당근알바
+                Searching jobs in your town
               </h1>
               <img
                 src="https://i.postimg.cc/jjV77Bs1/image.png"
@@ -425,7 +425,7 @@ const AllJobs = ({ logined, setLogined }) => {
                 whiteSpace: "nowrap",
               }}
             >
-              모든 당근알바
+              All jobs
             </h1>
 
             <span
@@ -444,7 +444,7 @@ const AllJobs = ({ logined, setLogined }) => {
                 }}
               >
                 {" "}
-                알바 구하기
+                Job searching
               </a>
             </span>
           </div>
@@ -458,7 +458,7 @@ const AllJobs = ({ logined, setLogined }) => {
               fontWeight: "bolder",
             }}
           >
-            <a href="/jobs">＞ 인기알바 보러가기 </a>
+            <a href="/jobs">＞ Popular jobs  </a>
           </h2>
           <ul
             style={{
@@ -591,7 +591,7 @@ const AllJobs = ({ logined, setLogined }) => {
                     paddingLeft: "2rem",
                   }}
                 >
-                  이웃의 일손을 빠르게
+                  Help your neighboards work quickly
                 </h1>
                 <h1
                   style={{
@@ -601,7 +601,7 @@ const AllJobs = ({ logined, setLogined }) => {
                     paddingLeft: "2rem",
                   }}
                 >
-                  당근알바에서 바로 찾아보세요!
+                  with eYaqin platform
                 </h1>
               </div>
               <div

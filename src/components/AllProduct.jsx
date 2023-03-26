@@ -32,7 +32,8 @@ const AllProduct = ({ logined, setLogined }) => {
     const onSubmit = async () => {
       try {
         const data = await axios({
-          url: `http://${BACKEND_URL}:8083/`,
+        url: `#`,
+        // url: `http://${BACKEND_URL}:8083/`,
           method: "GET",
         });
         onProduct(data.data);
@@ -52,7 +53,8 @@ const AllProduct = ({ logined, setLogined }) => {
   const moveProduct = async (id) => {
     try {
       await axios({
-        url: `http://${BACKEND_URL}:8083/productView/${id}`,
+        url: `#`,
+        // url: `http://${BACKEND_URL}:8083/productView/${id}`,
         method: "POST",
       });
     } catch (e) {
@@ -122,7 +124,7 @@ const AllProduct = ({ logined, setLogined }) => {
                 position: "relative",
               }}
             >
-              중고거래 모든 매물보기
+              All Stuff
             </h1>
 
             <h2
@@ -275,14 +277,14 @@ const AllProduct = ({ logined, setLogined }) => {
               textAlign: "center",
             }}
           >
-            더 구경하고 싶나요?
+            You want more?
           </h1>
           <div
             style={{
               textAlign: "center",
             }}
           >
-            <span>당근마켓 앱에서 따뜻한 거래를 직접 경험해보세요!</span>
+            <span>Download App for your Convenience</span>
           </div>
           <div
             style={{
@@ -369,7 +371,7 @@ const AllProduct = ({ logined, setLogined }) => {
                     paddingTop: "5px",
                   }}
                 >
-                  중고매물
+                  Secondhands
                   <br />
                   거래하기
                 </div>

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useRecoilState } from "recoil";
 import { authenticatedState } from "../recoil/auth";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCarrot, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faHouseChimneyCrack, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "../styles/Header.css";
 import { BACKEND_URL } from "../config/config";
 import { useNavigate } from "react-router-dom";
@@ -57,24 +57,24 @@ const BoardHeader = () => {
               fontSize: "1.4rem",
             }}
           >
-            <a href={`/`} className="fontt">
+            <a href={`/`} className="fontt relative">
               <FontAwesomeIcon
-                icon={faCarrot}
+                icon={faHouseChimneyCrack}
                 style={{
                   fontSize: "1.8rem",
                 }}
               />
-              당근마켓
+              eYaqin
             </a>
           </div>
           <div>
-            <a href={`/allproduct`}>중고거래</a>
+            <a href={`/allproduct`}>Secondhands</a>
           </div>
           <div>
-            <a href={`/alljobs`}>알바</a>
+            <a href={`/alljobs`}>Jobs</a>
           </div>
           <div>
-            <a href={`/allrealty`}>부동산 직거래</a>
+            <a href={`/allrealty`}>Real Estate</a>
           </div>
           <div
             style={{
@@ -93,7 +93,17 @@ const BoardHeader = () => {
               borderRadius: "5px",
             }}
           >
-            로그인
+            Login
+          </a>
+          <a
+            href={`/signup`}
+            style={{
+              outline: "1px #bcbcbc solid",
+              padding: "5px 10px",
+              borderRadius: "5px",
+            }}
+          >
+            Sign Up
           </a>
         </div>
         <div

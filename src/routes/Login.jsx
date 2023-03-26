@@ -93,7 +93,7 @@ const Login = () => {
                   fontSize: "1.8rem",
                 }}
               />
-              당근마켓
+              eYaqin
             </a>
           </div>
         </div>
@@ -113,7 +113,7 @@ const Login = () => {
               fontSize: "2rem",
             }}
           >
-            당근 로그인
+            Login to eYaqin
           </div>
           <br />
           <div className="pb-2">
@@ -168,7 +168,7 @@ const Login = () => {
                 }
               }}
             >
-              로그인
+              Login
             </button>
           </div>
           <br />
@@ -180,14 +180,14 @@ const Login = () => {
           >
             {" "}
             <div className="flex gap-3">
-              계정이 없으신가요?
+              No Account?
               <div
                 className="font-bold "
                 style={{
                   color: "#FF9F29",
                 }}
               >
-                <a href="/Join">회원 가입하기</a>
+                <a href="/Join">Create one!</a>
               </div>
             </div>
           </div>
@@ -224,7 +224,7 @@ const Login = () => {
               개인정보 취급방침
             </a>
             <a href="#" className="link-hover">
-              위치기반 서비스 이용약관
+              위치기반 서비스 이용약관r
             </a>
           </div>
           <div className="flex items-center">© Daangn Market Inc.</div>

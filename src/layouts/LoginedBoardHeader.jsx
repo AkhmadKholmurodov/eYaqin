@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useRecoilState } from "recoil";
 import { authenticatedState } from "../recoil/auth";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCarrot, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faHouseChimneyCrack, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
 import { BACKEND_URL } from "../config/config";
 import { useNavigate } from "react-router-dom";
@@ -61,22 +61,22 @@ const LoginedBoardHeader = ({ setLogined }) => {
           >
             <a href={`/`} className="fontt">
               <FontAwesomeIcon
-                icon={faCarrot}
+                icon={faHouseChimneyCrack}
                 style={{
                   fontSize: "1.8rem",
                 }}
               />
-              당근마켓
+              eYaqin
             </a>
           </div>
           <div>
-            <a href={`/allproduct`}>중고거래</a>
+            <a href={`/allproduct`}>Secondhands</a>
           </div>
           <div>
-            <a href={`/alljobs`}>알바</a>
+            <a href={`/alljobs`}>Jobs</a>
           </div>
           <div>
-            <a href={`/allrealty`}>부동산 직거래</a>
+            <a href={`/allrealty`}>Real Estate</a>
           </div>
           <div
             style={{
@@ -101,7 +101,7 @@ const LoginedBoardHeader = ({ setLogined }) => {
               sessionStorage.clear();
             }}
           >
-            로그아웃
+            Logout
           </button>
           <button
             style={{
@@ -113,7 +113,7 @@ const LoginedBoardHeader = ({ setLogined }) => {
               onMyPage();
             }}
           >
-            마이 페이지
+            My Page
           </button>
         </div>
         <div

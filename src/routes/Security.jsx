@@ -3,7 +3,7 @@ import axios from "axios";
 import LoginedHeader from "../layouts/LoginedHeader";
 import { useNavigate } from "react-router-dom";
 import { BACKEND_URL } from "../config/config";
-const Security = ({ logined, setLogined }) => {
+  const Security = ({ logined, setLogined }) => {
   const navigate = useNavigate();
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");

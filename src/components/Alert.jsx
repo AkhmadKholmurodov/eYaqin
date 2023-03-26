@@ -216,7 +216,7 @@ const Alert = ({}) => {
                       }}
                     >
                       <div>
-                        <span>아직 알림이 없어요!</span>
+                        <span>There is no any Notiification</span>
                       </div>
                     </div>
                   ) : (
@@ -242,7 +242,7 @@ const Alert = ({}) => {
                           marginTop: "5px",
                         }}
                       >
-                        알림 전체 삭제
+                        Clear all notification
                       </button>
                       {notification.map((notice, index) => (
                         <li
@@ -276,14 +276,14 @@ const Alert = ({}) => {
                                 }}
                               >
                                 <span>{index + 1}.</span>
-                                <span> {notice.sender}님께서 </span>
+                                <span> From {notice.sender} </span>
                                 {notice.type == "CHAT" ? (
                                   <div
                                     style={{
                                       display: "inline",
                                     }}
                                   >
-                                    <span>메세지를 보냈어요</span>
+                                    <span>sent the message</span>
                                     <div
                                       style={{
                                         overflow: "hidden",
@@ -318,9 +318,9 @@ const Alert = ({}) => {
                                       display: "inline",
                                     }}
                                   >
-                                    <span> 후기를 작성하셨어요</span>
+                                    <span> Did you write the review</span>
                                     <br />
-                                    <span> 후기를 작성해주세요!</span>
+                                    <span> Please, write the review!</span>
                                   </div>
                                 ) : (
                                   ""
@@ -331,7 +331,7 @@ const Alert = ({}) => {
                                       display: "inline",
                                     }}
                                   >
-                                    <span>답글을 작성하셨어요</span>
+                                    <span>You replied</span>
                                   </div>
                                 ) : (
                                   ""
@@ -383,14 +383,14 @@ const Alert = ({}) => {
                                   ˚
                                 </span>
                                 <span>{index + 1}. </span>
-                                <span>{notice.sender}님께서</span>
+                                <span>by {notice.sender}</span>
                                 {notice.type == "CHAT" ? (
                                   <div
                                     style={{
                                       display: "inline",
                                     }}
                                   >
-                                    <span>&nbsp;메세지를&nbsp;보냈어요</span>
+                                    <span>&nbsp;sent&nbsp;message</span>
                                     <div
                                       style={{
                                         overflow: "hidden",
@@ -414,7 +414,7 @@ const Alert = ({}) => {
                                       display: "inline",
                                     }}
                                   >
-                                    <span> 알바를 지원하셨어요</span>
+                                    <span> Did you find job?</span>
                                   </div>
                                 ) : (
                                   ""
@@ -425,9 +425,9 @@ const Alert = ({}) => {
                                       display: "inline",
                                     }}
                                   >
-                                    <span> 후기를 작성하셨어요</span>
+                                    <span>Did you write the review?</span>
                                     <br />
-                                    <span> 후기를 작성해주세요!</span>
+                                    <span> Please write the review</span>
                                   </div>
                                 ) : (
                                   ""
@@ -438,7 +438,7 @@ const Alert = ({}) => {
                                       display: "inline",
                                     }}
                                   >
-                                    <span> 답글을 작성하셨어요</span>
+                                    <span>Did you reply?</span>
                                   </div>
                                 ) : (
                                   ""

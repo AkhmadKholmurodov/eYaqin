@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useRecoilState } from "recoil";
 import { authenticatedState } from "../recoil/auth";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCarrot, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faHouseChimneyCrack, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { BACKEND_URL } from "../config/config";
 import { useNavigate } from "react-router-dom";
 const LoginedJobsHeader = ({ setLogined }) => {
@@ -63,7 +63,7 @@ const LoginedJobsHeader = ({ setLogined }) => {
           >
             <a href={`/`} className="fontt">
               <FontAwesomeIcon
-                icon={faCarrot}
+                icon={faHouseChimneyCrack}
                 style={{
                   fontSize: "1.8rem",
                 }}
@@ -72,17 +72,17 @@ const LoginedJobsHeader = ({ setLogined }) => {
             </a>
           </div>
           <div>
-            <a href={`/allproduct`}>중고거래</a>
+            <a href={`/allproduct`}>Secondhands</a>
           </div>
           <div
             style={{
               color: "#ffa445",
             }}
           >
-            <a href={`/alljobs`}>알바</a>
+            <a href={`/alljobs`}>Jobs</a>
           </div>
           <div>
-            <a href={`/allrealty`}>부동산 직거래</a>
+            <a href={`/allrealty`}>Real Estate</a>
           </div>
           <div>
             <a href={`/board`}>동네게시판</a>
@@ -103,7 +103,7 @@ const LoginedJobsHeader = ({ setLogined }) => {
               sessionStorage.clear();
             }}
           >
-            로그아웃
+            Logout
           </button>
           <button
             style={{
@@ -115,7 +115,7 @@ const LoginedJobsHeader = ({ setLogined }) => {
               onMyPage();
             }}
           >
-            마이 페이지
+            My Page
           </button>
         </div>
         <div

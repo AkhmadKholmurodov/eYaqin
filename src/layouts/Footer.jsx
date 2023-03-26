@@ -36,13 +36,13 @@ const Footer = () => {
             }}
           >
             <a href="#" className=" link-hover">
-              중고거래
+              secondhands
             </a>
             <a href="#" className=" link-hover">
               동네가게
             </a>
             <a href="#" className=" link-hover">
-              당근알바
+              jobs
             </a>
           </li>
           <li
@@ -60,7 +60,7 @@ const Footer = () => {
                 marginTop: "-8px",
               }}
             >
-              당근 비즈니스
+              eYaqin business
             </a>
             <a
               href="#"
@@ -84,11 +84,11 @@ const Footer = () => {
             }}
           >
             <a href="#" className=" link-hover">
-              자주 묻는 질문
+              FAQ
             </a>
 
             <a href="#" className=" link-hover">
-              회사 소개
+              About Us
             </a>
             <a href="#" className=" link-hover">
               인재 채용
@@ -106,7 +106,7 @@ const Footer = () => {
               paddingBottom: "15px",
             }}
           >
-            당근마켓 앱 다운로드
+            App download
           </span>
           <div className="flex gap-8">
             <a
@@ -151,20 +151,22 @@ const Footer = () => {
             color: "gray",
           }}
         >
-          <span className="font-bold">대표</span>
-          <span> 김재현, 김용현 </span>
-          <span className="font-bold">사업자번호</span>
-          <span> 375-87-00088</span>
+          <span className="font-bold">Boss</span>
+          <span> Akhmad, 윤진 </span>
+          <span className="font-bold">Office Number</span>
+          <span> 010-3802-1005</span>
           <br />
           <span className="font-bold">직업정보제공사업 신고번호 </span>
-          <span> 2016-서울서초-0051</span>
+          <span> 010-3802-1005 </span>
           <br />
           <span className="font-bold">주소 </span>
-          <span> 서울특별시 구로구 디지털로 30길 28, 609호 (당근서비스)</span>
+          <span> Uzbekistan Kashkadarya, Guzor, Uyimizni oldidagi zdaniya</span>
           <br />
-          <span className="font-bold">전화 </span>
-          <span>1544-9796 </span>
-          <span className="font-bold">고객문의 cs@daangnservice.com</span>
+          <span className="font-bold">Number </span>
+          <span>38021005 </span>
+          <span className="font-bold">
+            고객문의 <button>Click here</button>
+          </span>
           <br />
           <br />
 
@@ -175,28 +177,28 @@ const Footer = () => {
             }}
           >
             <a href="#" className="link-hover">
-              제휴 문의
+              제휴 Inquiries
             </a>
             <a href="#" className="link-hover">
-              광고 문의
+              Ad Inquiries
             </a>
             <a href="#" className="link-hover">
-              PR 문의
+              PR Inquiries
             </a>
             <a href="#" className="link-hover">
-              IR 문의
+              IR Inquiries
             </a>
           </div>
           <br />
           <div className="font-bold gap-3 flex">
             <a href="#" className="link-hover">
-              이용약관
+              Terms of using
             </a>
             <a href="#" className="link-hover">
-              개인정보처리방침
+              privacy policy
             </a>
             <a href="#" className="link-hover">
-              위치기반서비스 이용약관
+              Location-Based Services
             </a>
             <a href="#" className="link-hover">
               이용자보호 비전과 계획

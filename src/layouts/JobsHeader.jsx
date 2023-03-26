@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useRecoilState } from "recoil";
 import { authenticatedState } from "../recoil/auth";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCarrot, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faHouseChimneyCrack, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { BACKEND_URL } from "../config/config";
@@ -64,12 +64,12 @@ const JobsHeader = () => {
           >
             <a href={`/`} className="fontt">
               <FontAwesomeIcon
-                icon={faCarrot}
+                icon={faHouseChimneyCrack}
                 style={{
                   fontSize: "1.8rem",
                 }}
               />
-              당근마켓
+              eYaqin
             </a>
           </div>
           <div>
@@ -80,10 +80,10 @@ const JobsHeader = () => {
               color: "#ffa445",
             }}
           >
-            <a href={`/alljobs`}>알바</a>
+            <a href={`/alljobs`}>Jobs</a>
           </div>
           <div>
-            <a href={`/allrealty`}>부동산 직거래</a>
+            <a href={`/allrealty`}>Real Estate</a>
           </div>
           <div>
             <a href={`/board`}>동네게시판</a>
@@ -98,7 +98,7 @@ const JobsHeader = () => {
               borderRadius: "5px",
             }}
           >
-            로그인
+            Login
           </a>
         </div>
         <div

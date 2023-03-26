@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useRecoilState } from "recoil";
 import { authenticatedState } from "../recoil/auth";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCarrot, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { faHouseChimneyCrack, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "../styles/Header.css";
 import { BACKEND_URL } from "../config/config";
 import { useNavigate } from "react-router-dom";
@@ -28,21 +28,21 @@ const Header = () => {
         backgroundColor: "white",
       }}
     >
-      <div
-        style={{
-          width: "1100px",
-          height: "100%",
-          justifyContent: "space-between",
-          margin: "0 auto",
-          display: "flex",
-          backgroundColor: "white",
-          position: "sticky",
-          top: "0%",
-          zIndex: "9999",
-        }}
+      <div className="sticky top-0 flex p-3 items-start justify-between max-w-7xl mx-auto z-20 xl:items-center " //ozgardi
+        // style={{
+        //   width: "1100px",
+        //   height: "100%",
+        //   justifyContent: "space-between",
+        //   margin: "0 auto",
+        //   display: "flex",
+        //   backgroundColor: "white",
+        //   position: "sticky",
+        //   top: "0%",
+        //   zIndex: "9999",
+        // }}
       >
         <div
-          className="flex items-center justify-around"
+          className="flex items-center justify-around sticky top-0  mx-6" // ozgardi
           style={{
             width: "550px",
             height: "100%",
@@ -57,46 +57,66 @@ const Header = () => {
               fontSize: "1.4rem",
             }}
           >
-            <a href={`/`} className="fontt">
+            <a href={`/`} className="fontt relative">
               <FontAwesomeIcon
-                icon={faCarrot}
+                icon={faHouseChimneyCrack}
                 style={{
                   fontSize: "1.8rem",
                 }}
               />
-              당근마켓
+              eYaqin
             </a>
           </div>
-          <div
-            style={{
-              color: "#ffa445",
-            }}
+          <div 
+          className="hidden uppercase xl:inline-flex text-sm" //ozgardi
           >
-            <a href={`/allproduct`}>중고거래</a>
+            <div className=" text-amber-500 p-3" //ozgardi
+              // style={{
+              //   color: "#ffa445",
+              // }}
+            >
+              <a href={`/allproduct`}>Secondhands</a>
+            </div>
+            <div className="p-3">
+              <a href={`/alljobs`}>PT jobs</a>
+            </div>
+            <div className="p-3">
+              <a href={`/allrealty`}>Real Estate</a>
+            </div>
+            <div className="p-3">
+              <a href={`/board`}>동네게시판</a>
+            </div>
           </div>
-          <div>
-            <a href={`/alljobs`}>알바</a>
           </div>
-          <div>
-            <a href={`/allrealty`}>부동산 직거래</a>
-          </div>
-          <div>
-            <a href={`/board`}>동네게시판</a>
-          </div>
-        </div>
-        <div className="flex-grow justify-center items-center flex" style={{}}>
+        <div 
+        className="flex-grow justify-center items-center flex relative" //ozgardi
+        >
           <a
             href={`/login`}
-            style={{
-              outline: "1px #bcbcbc solid",
-              padding: "5px 10px",
-              borderRadius: "5px",
-            }}
+            className=" outline-gray-500 p-1.5 rounded-md ml-3 hover:bg-gray-300 hover:text-black" //ozgardi
+            // style={{
+            //   outline: "1px #bcbcbc solid",
+            //   padding: "5px 10px",
+            //   borderRadius: "5px",
+            // }}
           >
-            로그인
+            Login
+          </a>
+          <a
+            href={`/signup`}
+            className=" outline-gray-500 p-1.5 rounded-md ml-3 hover:bg-gray-300 hover:text-black" //ozgardi
+              //  style={{
+              // outline: "1px #bcbcbc solid",
+              // padding: "6px",
+              // borderRadius: "6px",
+              // marginLeft: "10px",
+            //  }}
+          >
+            SignUp
           </a>
         </div>
         <div
+          className="flex items-center gap-3 relative left-6" // ozgardi
           style={{
             display: "flex",
             alignItems: "center",
@@ -104,22 +124,24 @@ const Header = () => {
           }}
         >
           <FontAwesomeIcon
+            className="relative mr-6"
             icon={faMagnifyingGlass}
             style={{
               fontSize: "1.5rem",
             }}
           />
           <input
+            className=" w-72 rounded-md p-1.5 bg-gray-100 hidden md:inline-flex"
             type="text"
-            placeholder="물품이나 동네를 검색해 보세요"
+            placeholder="Search by Town or Stuff"
             value={search}
             onChange={onSearchChange}
-            style={{
-              width: "300px",
-              backgroundColor: "#f3f6f4",
-              padding: "5px 10px",
-              borderRadius: "10px",
-            }}
+            // style={{
+            //   width: "300px",
+            //   backgroundColor: "#f3f6f4",
+            //   padding: "5px 10px",
+            //   borderRadius: "10px",
+            // }}
             onKeyUp={(e) => {
               if (e.key == "Enter") {
                 onSearch(search);

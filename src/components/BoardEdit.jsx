@@ -12,7 +12,7 @@ import DaumPostcode from "react-daum-postcode";
 import WriteMap from "./WriteMap";
 import { BiMap } from "react-icons/bi";
 import { upload } from "@testing-library/user-event/dist/upload";
-import { BACKEND_URL } from "../config/config";
+// import { BACKEND_URL } from "../config/config";
 
 const BoardEdit = ({ logined, setLogined }) => {
   const { num } = useParams();
@@ -126,7 +126,7 @@ const BoardEdit = ({ logined, setLogined }) => {
     const getData = async () => {
       try {
         const data = await axios({
-          url: `http://${BACKEND_URL}:8083/board/${num}`,
+          // url: `http://${BACKEND_URL}:8083/board/${num}`,
           method: "GET",
         });
         setContentValue(data.data.boardContent);
@@ -137,7 +137,7 @@ const BoardEdit = ({ logined, setLogined }) => {
       }
       try {
         const data1 = await axios({
-          url: `http://${BACKEND_URL}:8083/getBoardWithImage/${num}`,
+          // url: `http://${BACKEND_URL}:8083/getBoardWithImage/${num}`,
           method: "GET",
         });
         console.log(data1.data);
@@ -152,7 +152,7 @@ const BoardEdit = ({ logined, setLogined }) => {
   const onBoardEdit = async (contentValue, category, addressDetail) => {
     try {
       const data = await axios({
-        url: `http://${BACKEND_URL}:8083/boardedit/${num}`,
+        // url: `http://${BACKEND_URL}:8083/boardedit/${num}`,
         method: "POST",
         data: {
           boardCategory: category,
@@ -197,7 +197,7 @@ const BoardEdit = ({ logined, setLogined }) => {
         headers: {
           "Content-Type": `application/json`,
         },
-        url: `http://${BACKEND_URL}:8083/boardEditImages`,
+        // url: `http://${BACKEND_URL}:8083/boardEditImages`,
         method: "POST",
         data: formData,
       });
